@@ -1,0 +1,26 @@
+__max_num_config_instances: &max_num_config_instances 5
+
+module_name: PHL
+
+parameters:
+  - group: Phalanx Configure
+    definitions:
+      PHL_SER${i}_BAUD:
+          description:
+              short: Phalanx Serial D${i} baudrate
+              long: |
+                  This parameter is used as the Phalanx D${i} baudrate
+          type: int32
+          reboot_required: true
+          num_instances: *max_num_config_instances
+          instance_start: 1
+          default: 115200
+
+      PHL_F2_BAUD:
+          description:
+              short: Phalanx Serial F2 baudrate
+              long: |
+                  This parameter is used as the Phalanx D${i} baudrate
+          type: int32
+          reboot_required: true
+          default: 115200

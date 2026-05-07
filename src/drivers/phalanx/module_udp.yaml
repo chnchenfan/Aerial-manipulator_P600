@@ -1,0 +1,63 @@
+__max_num_config_instances: &max_num_config_instances 7
+
+module_name: PHL
+
+parameters:
+  - group: Phalanx Configure
+    definitions:
+      PHL_UDP${i}_IP:
+          description:
+              short: Phalanx UDP ${i} IP
+              long: |
+                  This parameter is used as the Phalanx D${i} baudrate
+          type: int32
+          reboot_required: true
+          num_instances: *max_num_config_instances
+          instance_start: 1
+          default: 117
+      PHL_UDP${i}_PORT:
+          description:
+              short: Phalanx UDP ${i} Port
+              long: |
+                  This parameter is used as the Phalanx D${i} baudrate
+          type: int32
+          reboot_required: true
+          num_instances: *max_num_config_instances
+          instance_start: 1
+          default: [14510,14520,14530,14540,14541,14542,14543]
+
+      PHL_UDP_IP_1:
+          description:
+              short: Phalanx UDP IP First Byte
+              long: |
+                  This parameter is used as Phalanx UDP IP First Byte
+          type: int32
+          reboot_required: true
+          default: 192
+
+      PHL_UDP_IP_2:
+          description:
+              short: Phalanx UDP IP Second Byte
+              long: |
+                  This parameter is used as Phalanx UDP IP Second Byte
+          type: int32
+          reboot_required: true
+          default: 168
+
+      PHL_UDP_IP_3:
+          description:
+              short: Phalanx UDP IP Third Byte
+              long: |
+                  This parameter is used as Phalanx UDP IP Third Byte
+          type: int32
+          reboot_required: true
+          default: 2
+
+      PHL_UDP_IP_LC_4:
+          description:
+              short: Phalanx UDP IP Fourth Byte
+              long: |
+                  This parameter is used as Phalanx UDP IP Fourth Byte
+          type: int32
+          reboot_required: true
+          default: 110

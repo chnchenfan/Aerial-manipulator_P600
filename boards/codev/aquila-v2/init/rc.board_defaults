@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# CODEV AQUILA specific board defaults
+#------------------------------------------------------------------------------
+
+# Enable IMU thermal control
+param set-default SENS_EN_THERMAL 0
+
+set LOGGER_BUF 64
+
+param set SYS_AUTOSTART 4065
+param set SYS_USE_IO 0

@@ -1,0 +1,180 @@
+__max_num_config_instances: &max_num_config_instances 1
+
+module_name: PHL
+
+parameters:
+  - group: Phalanx Configure
+    definitions:
+        PHL_D1A_CHL:
+            description:
+                short: Phalanx D1A PWM Remap Channel
+                long: |
+                    This parameter is used as the Phalanx D1A PWM Remap Channel
+            type: enum
+            values:
+                0: Unassigned
+                1: Channel 1
+                2: Channel 2
+                3: Channel 3
+                4: Channel 4
+                5: Channel 5
+                6: Channel 6
+                7: Channel 7
+                8: Channel 8
+                9: Channel 9
+                10: Channel 10
+                11: Channel 11
+                12: Channel 12
+                13: Channel 13
+                14: Channel 14
+                15: Channel 15
+                16: Channel 16
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D1B_CHL:
+            description:
+                short: Phalanx D1B PWM Remap Channel
+                long: |
+                    This parameter is used as the Phalanx D1B PWM Remap Channel
+            type: enum
+            values:
+                0: Unassigned
+                1: Channel 1
+                2: Channel 2
+                3: Channel 3
+                4: Channel 4
+                5: Channel 5
+                6: Channel 6
+                7: Channel 7
+                8: Channel 8
+                9: Channel 9
+                10: Channel 10
+                11: Channel 11
+                12: Channel 12
+                13: Channel 13
+                14: Channel 14
+                15: Channel 15
+                16: Channel 16
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D2A_CHL:
+            description:
+                short: Phalanx D2A GPIO Remap Channel
+                long: |
+                    This parameter is used as the Phalanx D1B PWM Remap Channel
+            type: enum
+            values:
+                0: Unassigned
+                1: Channel 1
+                2: Channel 2
+                3: Channel 3
+                4: Channel 4
+                5: Channel 5
+                6: Channel 6
+                7: Channel 7
+                8: Channel 8
+                9: Channel 9
+                10: Channel 10
+                11: Channel 11
+                12: Channel 12
+                13: Channel 13
+                14: Channel 14
+                15: Channel 15
+                16: Channel 16
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D2B_CHL:
+            description:
+                short: Phalanx D2B GPIO Remap Channel
+                long: |
+                    This parameter is used as the Phalanx D1B PWM Remap Channel
+            type: enum
+            values:
+                0: Unassigned
+                1: Channel 1
+                2: Channel 2
+                3: Channel 3
+                4: Channel 4
+                5: Channel 5
+                6: Channel 6
+                7: Channel 7
+                8: Channel 8
+                9: Channel 9
+                10: Channel 10
+                11: Channel 11
+                12: Channel 12
+                13: Channel 13
+                14: Channel 14
+                15: Channel 15
+                16: Channel 16
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D1A_MODE:
+            description:
+                short: Phalanx D1A PWM Mode
+                long: |
+                        The Phalanx D1A PWM Mode which can outputs differnt pwms
+            type: enum
+            values:
+                    0: Disabled
+                    1: Follow Stick
+                    2: PWM Shoot
+                    3: PWM Sustain
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D1B_MODE:
+            description:
+                short: Phalanx D1B PWM Mode
+                long: |
+                        The Phalanx D1B PWM Mode which can outputs differnt pwms
+            type: enum
+            values:
+                    0: Disabled
+                    1: Follow Stick
+                    2: PWM Shoot
+                    3: PWM Sustain
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D2A_MODE:
+            description:
+                short: Phalanx D2A PWM Mode
+                long: |
+                        The Phalanx D2A PWM Mode which can outputs differnt pwms
+            type: enum
+            values:
+                    0: Disabled
+                    1: Low_High
+                    2: High_Low
+                    3: Low_High_Low
+                    4: High_Low_High
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
+
+        PHL_D2B_MODE:
+            description:
+                short: Phalanx D2B PWM Mode
+                long: |
+                        The Phalanx D2B PWM Mode which can outputs differnt pwms
+            type: enum
+            values:
+                    0: Disabled
+                    1: Low_High
+                    2: High_Low
+                    3: Low_High_Low
+                    4: High_Low_High
+            num_instances: *max_num_config_instances
+            instance_start: 1
+            default: 0
