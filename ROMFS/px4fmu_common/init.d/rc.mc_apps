@@ -48,7 +48,7 @@ fi
 #                        End Estimator Group Selection                        #
 ###############################################################################
 
-if [ $ESO_MC_CONTROL = yes ]
+if param compare P600_CTRL_MODE 1
 then
 	#
 	# Start ESO multicopter control chain.

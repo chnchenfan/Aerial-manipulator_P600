@@ -294,3 +294,18 @@ PARAM_DEFINE_INT32(SYS_FAILURE_EN, 0);
  * @group System
  */
 PARAM_DEFINE_INT32(SYS_PARAM_VER, 1);
+
+/**
+ * P600 controller mode.
+ *
+ * Selects the multicopter controller chain started for the P600 airframe.
+ * Changing this value requires a reboot so only one controller stack starts.
+ *
+ * @value 0 Standard MC controller
+ * @value 1 ESO controller
+ * @reboot_required true
+ * @min 0
+ * @max 1
+ * @group System
+ */
+PARAM_DEFINE_INT32(P600_CTRL_MODE, 0);
