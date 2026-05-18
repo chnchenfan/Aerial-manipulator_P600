@@ -1,0 +1,11 @@
+timestamp=20260514_010433
+experiment=exp1
+experiment_mode=exp1
+arm_branch=unknown
+arm_commit=f82c602
+uav_branch=unknown
+uav_commit=f054587
+bag_path=/home/amov/p600_arm_control/data/exp1/20260514_010433/exp1_px4.bag
+topics_configured=/wjl/guidefly/pose_d,/mavros/setpoint_raw/local,/mavros/setpoint_raw/attitude,/mavros/setpoint_raw/target_attitude,/mavros/local_position/pose,/mavros/local_position/velocity_local,/mavros/vision_pose/pose,/mavros/imu/data,/mavros/imu/data_raw,/mavros/actuator_control,/mavros/esc_status,/mavros/state,/mavros/extended_state,/mavros/rc/in,/diagnostics,/mavros/battery,/wjl/arm/guidefly/angle_d,/wjl/arm/real/angle_d,/wjl/arm/real/angle_r,/wjl/arm/real/angle_error,/wjl/arm/guidefly/online_offset,/vrpn_client_node/arm_base/pose,/tf,/tf_static
+topics_available=/mavros/setpoint_raw/local,/mavros/setpoint_raw/attitude,/mavros/setpoint_raw/target_attitude,/mavros/local_position/pose,/mavros/local_position/velocity_local,/mavros/vision_pose/pose,/mavros/imu/data,/mavros/imu/data_raw,/mavros/actuator_control,/mavros/esc_status,/mavros/state,/mavros/extended_state,/mavros/rc/in,/diagnostics,/mavros/battery,/vrpn_client_node/arm_base/pose,/tf,/tf_static
+topics_missing=/wjl/guidefly/pose_d,/wjl/arm/guidefly/angle_d,/wjl/arm/real/angle_d,/wjl/arm/real/angle_r,/wjl/arm/real/angle_error,/wjl/arm/guidefly/online_offset
